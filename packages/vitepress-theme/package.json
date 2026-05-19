@@ -1,0 +1,30 @@
+{
+  "name": "@proj-airi/vitepress-theme",
+  "type": "module",
+  "version": "0.10.2",
+  "private": true,
+  "description": "Shared VitePress theme runtime and styles for Project AIRI documentation sites",
+  "exports": {
+    ".": "./src/index.ts",
+    "./config": "./src/config.ts"
+  },
+  "scripts": {
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/comfortaa": "^5.2.8",
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@fontsource-variable/quicksand": "^5.2.10",
+    "@fontsource/dm-mono": "^5.2.7",
+    "@fontsource/dm-serif-display": "^5.2.8",
+    "@unocss/reset": "^66.6.8",
+    "vue": "catalog:",
+    "vue-i18n": "^11.3.2"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "^5.9.3",
+    "vitepress": "2.0.0-alpha.17",
+    "vue-tsc": "^3.2.6"
+  }
+}

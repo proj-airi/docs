@@ -1,0 +1,20 @@
+catalogMode: prefer
+shellEmulator: true
+packages:
+  - packages/**
+  - '!**/dist/**'
+catalog:
+  '@moeru/eslint-config': 0.1.0-beta.15
+  '@moeru/std': 0.1.0-beta.17
+  '@takumi-rs/image-response': 1.0.0-beta.20
+  embla-carousel-vue: 9.0.0-rc02
+  posthog-js: 1.306.1
+  tsdown: ^0.21.9
+  vue: ^3.5.32
+onlyBuiltDependencies:
+  - '@napi-rs/image'
+  - esbuild
+packageExtensions:
+  '@intlify/unplugin-vue-i18n':
+    peerDependencies:
+      vite: '*'

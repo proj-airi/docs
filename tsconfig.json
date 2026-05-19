@@ -1,0 +1,51 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "unplugin-yaml/types",
+      "vitepress/client",
+      "vue"
+    ],
+    "strict": true,
+    "declaration": false,
+    "outDir": "dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "/**/*.vue",
+    "components/**/*.vue",
+    ".vitepress/**/*.vue",
+    "packages/**/*.vue",
+    "/**/*.ts",
+    "/**/*.md",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.vue",
+    "packages/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "packages/*/tsdown.config.ts"
+  ],
+  "vueCompilerOptions": {
+    "vitePressExtensions": [
+      ".md"
+    ]
+  }
+}
